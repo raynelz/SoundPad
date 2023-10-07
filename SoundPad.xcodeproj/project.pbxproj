@@ -13,6 +13,10 @@
 		EC139D4E2AD1D0AB00A95F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC139D4C2AD1D0AB00A95F17 /* Main.storyboard */; };
 		EC139D502AD1D0AD00A95F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC139D4F2AD1D0AD00A95F17 /* Assets.xcassets */; };
 		EC139D532AD1D0AD00A95F17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC139D512AD1D0AD00A95F17 /* LaunchScreen.storyboard */; };
+		EC139D892AD1E17C00A95F17 /* drum.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC139D882AD1E17C00A95F17 /* drum.wav */; };
+		EC139D8B2AD1E1FE00A95F17 /* arcade.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC139D8A2AD1E1FE00A95F17 /* arcade.wav */; };
+		EC139D8D2AD1E5E100A95F17 /* manera.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC139D8C2AD1E5E100A95F17 /* manera.wav */; };
+		EC921AAE2AD1ED7D004F8810 /* Я буду.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC921AAD2AD1ED7D004F8810 /* Я буду.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EC139D4F2AD1D0AD00A95F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC139D522AD1D0AD00A95F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC139D542AD1D0AD00A95F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC139D882AD1E17C00A95F17 /* drum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum.wav; sourceTree = "<group>"; };
+		EC139D8A2AD1E1FE00A95F17 /* arcade.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = arcade.wav; sourceTree = "<group>"; };
+		EC139D8C2AD1E5E100A95F17 /* manera.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = manera.wav; sourceTree = "<group>"; };
+		EC921AAD2AD1ED7D004F8810 /* Я буду.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Я буду.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		EC139D452AD1D0AB00A95F17 /* SoundPad */ = {
 			isa = PBXGroup;
 			children = (
-				EC139D462AD1D0AB00A95F17 /* AppDelegate.swift */,
-				EC139D482AD1D0AB00A95F17 /* SceneDelegate.swift */,
+				EC139D5A2AD1D0CD00A95F17 /* Files */,
 				EC139D4A2AD1D0AB00A95F17 /* ViewController.swift */,
 				EC139D4C2AD1D0AB00A95F17 /* Main.storyboard */,
 				EC139D4F2AD1D0AD00A95F17 /* Assets.xcassets */,
 				EC139D512AD1D0AD00A95F17 /* LaunchScreen.storyboard */,
 				EC139D542AD1D0AD00A95F17 /* Info.plist */,
+				EC139D5C2AD1DAC400A95F17 /* Sounds */,
 			);
 			path = SoundPad;
+			sourceTree = "<group>";
+		};
+		EC139D5A2AD1D0CD00A95F17 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC139D462AD1D0AB00A95F17 /* AppDelegate.swift */,
+				EC139D482AD1D0AB00A95F17 /* SceneDelegate.swift */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		EC139D5C2AD1DAC400A95F17 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EC139D882AD1E17C00A95F17 /* drum.wav */,
+				EC139D8A2AD1E1FE00A95F17 /* arcade.wav */,
+				EC139D8C2AD1E5E100A95F17 /* manera.wav */,
+				EC921AAD2AD1ED7D004F8810 /* Я буду.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC921AAE2AD1ED7D004F8810 /* Я буду.wav in Resources */,
+				EC139D8D2AD1E5E100A95F17 /* manera.wav in Resources */,
+				EC139D892AD1E17C00A95F17 /* drum.wav in Resources */,
 				EC139D532AD1D0AD00A95F17 /* LaunchScreen.storyboard in Resources */,
+				EC139D8B2AD1E1FE00A95F17 /* arcade.wav in Resources */,
 				EC139D502AD1D0AD00A95F17 /* Assets.xcassets in Resources */,
 				EC139D4E2AD1D0AB00A95F17 /* Main.storyboard in Resources */,
 			);
@@ -307,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.raynelz.SoundPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,9 +370,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.raynelz.SoundPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
