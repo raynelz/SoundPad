@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,98 +12,117 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoundPad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxU-xw-QJU">
-                                <rect key="frame" x="238" y="404" width="115" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="manera"/>
-                                <connections>
-                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeE-Xr-1je"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipw-go-Pnt">
-                                <rect key="frame" x="26" y="416" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound Pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lN-h1-1o6">
-                                <rect key="frame" x="97" y="165" width="199" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound Pad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lN-h1-1o6">
+                                <rect key="frame" x="107.66666666666669" y="189" width="199" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🥁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeG-fJ-jP1">
-                                <rect key="frame" x="40" y="415" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="👾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggi-wV-GfB">
-                                <rect key="frame" x="40" y="482" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmX-hb-4F1">
-                                <rect key="frame" x="238" y="471" width="115" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Я буду"/>
-                                <connections>
-                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAO-db-PpJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-38-NGZ">
-                                <rect key="frame" x="71" y="471" width="115" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="arcade"/>
-                                <connections>
-                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DpK-MI-rT5"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🩵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKy-bE-VQz">
-                                <rect key="frame" x="207" y="414" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🐈‍⬛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-Le-KVA">
-                                <rect key="frame" x="207" y="482" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqN-bC-lgl">
-                                <rect key="frame" x="71" y="404" width="115" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="drum"/>
-                                <connections>
-                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dao-ff-8Yo"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIt-1e-fmp" userLabel="Buttons View">
+                                <rect key="frame" x="0.0" y="384" width="414" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxU-xw-QJU">
+                                        <rect key="frame" x="247.66666666666663" y="77" width="115" height="43"/>
+                                        <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="manera"/>
+                                        <connections>
+                                            <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeE-Xr-1je"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipw-go-Pnt">
+                                        <rect key="frame" x="187.66666666666666" y="53" width="0.0" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🥁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeG-fJ-jP1">
+                                        <rect key="frame" x="31.666666666666671" y="19" width="23" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmX-hb-4F1">
+                                        <rect key="frame" x="247.66666666666663" y="8" width="115" height="43"/>
+                                        <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Я буду"/>
+                                        <connections>
+                                            <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAO-db-PpJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-38-NGZ">
+                                        <rect key="frame" x="62.666666666666657" y="77" width="115" height="43"/>
+                                        <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="arcade"/>
+                                        <connections>
+                                            <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DpK-MI-rT5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🩵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKy-bE-VQz">
+                                        <rect key="frame" x="216.66666666666666" y="88" width="23" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🐈‍⬛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-Le-KVA">
+                                        <rect key="frame" x="216.66666666666666" y="19" width="23" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqN-bC-lgl">
+                                        <rect key="frame" x="62.666666666666657" y="8" width="115" height="43"/>
+                                        <color key="backgroundColor" red="0.1686274707" green="0.1764705926" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="drum"/>
+                                        <connections>
+                                            <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dao-ff-8Yo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="👾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggi-wV-GfB">
+                                        <rect key="frame" x="31.666666666666671" y="88" width="23" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dqN-bC-lgl" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="-87" id="E1c-Gb-4wx"/>
+                                    <constraint firstItem="iKy-bE-VQz" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="21" id="GaJ-jQ-fjr"/>
+                                    <constraint firstItem="tmX-hb-4F1" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="98" id="JS1-wr-1gG"/>
+                                    <constraint firstItem="tmX-hb-4F1" firstAttribute="leading" secondItem="wdT-Le-KVA" secondAttribute="trailing" constant="8" id="LcS-YC-fVI"/>
+                                    <constraint firstItem="Ggi-wV-GfB" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="-164" id="b7V-KH-qWu"/>
+                                    <constraint firstItem="wdT-Le-KVA" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="21" id="dHr-E8-vFd"/>
+                                    <constraint firstItem="wdT-Le-KVA" firstAttribute="leading" secondItem="dqN-bC-lgl" secondAttribute="trailing" constant="39" id="kdv-z6-emC"/>
+                                    <constraint firstItem="RxU-xw-QJU" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="98" id="lwo-LF-d8J"/>
+                                    <constraint firstItem="fIg-38-NGZ" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="-87" id="oHq-nz-BF4"/>
+                                    <constraint firstItem="RxU-xw-QJU" firstAttribute="leading" secondItem="iKy-bE-VQz" secondAttribute="trailing" constant="8" id="uuP-FD-cgA"/>
+                                    <constraint firstItem="dqN-bC-lgl" firstAttribute="leading" secondItem="KeG-fJ-jP1" secondAttribute="trailing" constant="8" id="vGc-mV-pzx"/>
+                                    <constraint firstItem="iKy-bE-VQz" firstAttribute="leading" secondItem="fIg-38-NGZ" secondAttribute="trailing" constant="39" id="xJo-dH-Dk6"/>
+                                    <constraint firstItem="fIg-38-NGZ" firstAttribute="leading" secondItem="Ggi-wV-GfB" secondAttribute="trailing" constant="8" id="xe5-Ad-OEF"/>
+                                    <constraint firstItem="KeG-fJ-jP1" firstAttribute="centerX" secondItem="nIt-1e-fmp" secondAttribute="centerX" constant="-164" id="xpu-Cm-ykq"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8lN-h1-1o6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HxE-JQ-gMy"/>
+                            <constraint firstItem="nIt-1e-fmp" firstAttribute="top" secondItem="8lN-h1-1o6" secondAttribute="bottom" constant="147" id="Im0-Zo-uSZ"/>
+                            <constraint firstItem="8lN-h1-1o6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-235" id="TUn-BX-qZy"/>
+                            <constraint firstItem="nIt-1e-fmp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wck-o4-r5f"/>
+                            <constraint firstItem="nIt-1e-fmp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gvG-Vk-wJG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonFour" destination="tmX-hb-4F1" id="OTo-7h-HpD"/>
